@@ -1,0 +1,129 @@
+
+header {
+    border: 1px solid red;
+    position: relative;
+    z-index: 0;
+}
+
+header img {
+    width: 100%;
+   
+    /* height: 100% */
+}
+
+
+
+.nav {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+#logo {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    /* padding: 10px; */
+}
+
+a:hover {
+    border-bottom: 2px solid #0477BF;
+    font-size: 18px;
+}
+
+.imageHeader {
+    position: relative;
+    opacity:  0.8;
+    z-index: 0;
+}
+
+.imageHeader:hover {
+    opacity: 1;
+}
+
+.miraVeHeader {
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 35%;
+    right: 5%;
+    /* top: 50%;
+    left: 50%; */
+    color: #ffffff;
+    font-size: 150px;
+    font-weight: bold;
+    display:inline-block;
+    width: 90%;
+    text-align: center;
+    z-index: 2;
+}
+
+
+
+#lugares {
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.sitios {
+    border: 1px solid yellow;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.card {
+    /* border: 1px solid black; */
+    box-shadow: 10px 5px 5px black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+   /* width: 350px; */
+   width: 30%;
+   height: 400px;
+}
+
+.img-card {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 250px;
+}
+
+.card h3 p {
+    /* margin: 5px; */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+
+
+footer {
+    border-top: 1px;
+    margin-top: 20px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: oklch(0.372 0.044 257.287);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
