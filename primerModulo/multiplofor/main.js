@@ -20,22 +20,34 @@ entrada.addEventListener("input", (evento) => {
 //     }
 // }
 
+
+
 function esMultiplo(multiplo){
     for ( let i=1; i <= multiplo; i++){
         if( (i % 3 == 0) && (i % 5 == 0)){
             // return "FizzBuzz"
-            console.log("FizzBuzz")
+            let hijo = document.createElement("li") 
+        hijo.innerHTML = i
+        salida.appendChild(hijo)
+            // console.log("FizzBuzz")
         } else if (i % 3 == 0 ) {
+            let hijo = document.createElement("li") 
+        hijo.innerHTML = i
             // return "Fizz"
-            console.log("Fizz")
+            // console.log("Fizz")
         } else if(i % 5 == 0) {
+            let hijo = document.createElement("li") 
+            hijo.innerHTML = i
             // return "Buzz"
-            console.log("Buzz")
+            // console.log("Buzz")
         } else {
             // return i
-            console.log(i)
+            let hijo = document.createElement("li") 
+            hijo.innerHTML = i
+            // console.log(i)
         }
-        
+        // let hijo = document.createElement("ol") 
+        // hijo.innerHTML = i
     }
 }
 
@@ -54,8 +66,8 @@ function esMultiplo(multiplo){
 
 btnCalcular.addEventListener("click", () => {
     let resultado = esMultiplo(multiplo)
-    let hijo = document.createElement("p")
-    hijo.innerHTML = multiplo + " " + resultado
-    salida.appendChild(hijo)
+    // let hijo = document.createElement("ol")
+    // hijo.innerHTML = multiplo + " " + resultado
+    // salida.appendChild(hijo)
 })
 
