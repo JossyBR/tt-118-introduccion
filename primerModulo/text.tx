@@ -1,0 +1,8 @@
+let notas = ["Do", "Re", "Mi", "Fa", "Sol", "La", "Si"]
+
+notas[2] = "Mi"
+notas[3] = "Fa"
+notas[4] = "Sol"
+notas[5] = "La"
+notas[1] = "Re"
+notas[5] = "La"

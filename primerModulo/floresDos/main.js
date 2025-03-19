@@ -9,12 +9,12 @@ let btnMultiplo = document.getElementById("btnMultiplo");
 
 let salidaflor = document.getElementById("salidaflor");
 
+// Variables para guardar la entrada de cada caja
 let numeroMultiplo = 0;
 let entradaA = 3
 let entradaB = 5
 let entradaC = 6
 let entradaD = 7
-
 
 let frase = "El numero digitado es:"
 let fraseDos = " y la flor es:"
@@ -63,8 +63,13 @@ function esMultiplo(numero, entradaA, entradaB, entradaC, entradaD) {
 
 
 btnMultiplo.addEventListener("click", () => {
-    let resultado = esMultiplo(numeroMultiplo, entradaA, entradaB, entradaC, entradaD)
     let hijo = document.createElement("p")
-    hijo.innerHTML = frase + " " + numeroMultiplo +" "+ fraseDos + " " + resultado
+    //Con este If se comprueba que la entrada no sea cero
+     if ( entradaA !=0 && entradaB !=0 && entradaC !=0 && entradaD !=0){
+        let resultado = esMultiplo(numeroMultiplo)
+        hijo.innerHTML = frase + " " + numeroMultiplo +" "+ fraseDos + " " + resultado
+     } else {
+        hijo.innerHTML = "No se puede realizar la operación, cambia el valor de 0"
+     }  
     salidaflor.appendChild(hijo)
 })
